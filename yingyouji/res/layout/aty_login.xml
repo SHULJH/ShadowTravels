@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_image"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:id="@+id/login_div"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_login_div"
+        android:padding="15dp"
+        android:layout_margin="15dp">
+        
+        <!-- 帐号 -->
+        <TextView 
+            android:id="@+id/tv_login_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_username"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"/>
+        
+        <EditText
+            android:id="@+id/et_login_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/login_username_hint"
+            android:layout_below="@id/tv_login_username"
+            android:singleLine="true"
+            android:inputType="text"/>
+        
+        <!-- 密码 -->
+        <TextView
+            android:id="@+id/tv_login_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_password"
+            android:layout_below="@id/et_login_username"
+            android:layout_marginTop="3dp"/>
+        
+        <EditText 
+            android:id="@+id/et_login_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_login_password"
+            android:inputType="textPassword"
+            android:singleLine="true"/>
+        
+        <!-- 注册登录button -->
+        <Button 
+            android:id="@+id/btn_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_login_password"
+            android:layout_alignLeft="@id/et_login_password"
+            android:text="@string/register"
+            android:background="#7FFFFF7F"/>
+        <Button 
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_login_password"
+            android:layout_alignRight="@id/et_login_password"
+            android:text="@string/login"
+            android:background="#7F00FFFF"/>"
+            "
+    </RelativeLayout>
+    
+    
+
+</LinearLayout>
