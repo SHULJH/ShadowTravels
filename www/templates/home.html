@@ -1,0 +1,23 @@
+<ion-header-bar class="item-input-inset">
+  <img src="" ng-click="href(image.url)">
+  <label class="item-input-wrapper">
+    <i class="icon ion-ios-search-strong placeholder-icon"></i>
+    <input type="search" placeholder="Search">
+  </label>
+  <button class="button button-clear">
+    Cancel
+  </button>
+</ion-header-bar>
+<ion-view view-title="Home">
+  <ion-content class="padding">
+    <ion-slide-box class="slidebox" auto-play="true" slide-interval="3000"
+                   delegate-handle="slideimgs" does-continue="true">
+      <ion-slide ng-repeat="image in slideimgs">
+        <div id="image-box" ng-click="href(image.url)">
+          <img src={{image.image}}>
+        </div>
+      </ion-slide>
+    </ion-slide-box>
+
+  </ion-content>
+</ion-view>

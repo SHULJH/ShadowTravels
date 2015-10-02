@@ -1,0 +1,46 @@
+<ion-header-bar class="bar-positive">我的作品</ion-header-bar>
+<ion-view view-title="Photo">
+  <ion-content>
+    <ion-refresher
+      pulling-text="下拉刷新..."
+      on-refresh="doRefresh()">
+    </ion-refresher>
+
+    <div id="dynamicPhoto" ng-repeat="photo in myPhotos">
+      <div class="list card">
+        <div class="item item-avatar">
+          <img src={{photo.face}}>
+          <h2>{{photo.username}}</h2>
+          <p>{{photo.datetime}}</p>
+        </div>
+
+        <div class="item item-body">
+          <img class="full-image" src={{photo.cover}}>
+          <p>
+            {{photo.content}}
+          </p>
+          <p>
+            <a href="#" class="subdued">{{photo.likenum}} Like</a>
+            <a href="#" class="subdued">{{photo.commentnum}} Comments</a>
+          </p>
+        </div>
+        <!--TODO-->
+        <div class="item tabs tabs-secondary tabs-icon-left">
+          <a class="tab-item" href="#">
+            <i class="icon ion-thumbsup"></i>
+            Like
+          </a>
+          <a class="tab-item" href="#">
+            <i class="icon ion-chatbox"></i>
+            Comment
+          </a>
+          <a class="tab-item" href="#">
+            <i class="icon ion-share"></i>
+            Share
+          </a>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+
+</ion-view>
