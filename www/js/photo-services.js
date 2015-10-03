@@ -14,7 +14,7 @@ angular.module('photo.services', [])
     {
       username  : "lijiahua",
       face      : "http://imglf1.ph.126.net/JFMSTHQ-NDy3LxtfbojuIQ==/6608459607608458240.jpg",
-      content   : "*********************************************************************************************************\\n\\n\\n\\n\\n\\n\\n*******\nIt's so long, however, you finished reading it.",
+      content   : "*********************************************************************************************************<br></br>*******\nIt's so long, however, you finished reading it.",
       datetime  : "October 1, 2015",
       cover     : "http://imglf0.nosdn.127.net/img/OERRYzRCdVVPNGFNZzFuOU5aWjBWUEZNeVgyVHd6NWk1K3Bvd1pORTJMS0p0c1pRWm0vUmRRPT0.jpg?imageView&thumbnail=1680x0&quality=96&stripmeta=0&type=jpg",
       likenum   : "1",
